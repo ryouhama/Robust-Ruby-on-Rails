@@ -30,3 +30,20 @@ rails new [your_applicaiton_name]
 blog/bin/rails server
 ```
 
+### DB Migration
+コマンドでテーブルのテンプレートつくってくれる
+```shell
+# テーブル: Article
+# カラム: title, body, created_at, updated_at
+bin/rails generate model Article title:string body:text
+```
+`db/migrate`にタイムスタンプ付きのmigrationファイルを作成する
+```shell
+bin/rails db:migrate
+```
+
+### Rails Console
+DjangoのShell_plusみたいなもん
+```shell
+bin/rails console
+```
